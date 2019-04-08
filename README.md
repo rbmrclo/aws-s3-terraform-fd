@@ -29,6 +29,10 @@ $ cd aws-s3-terraform-fd
 $ terraform init
 ```
 
+Additional setup:
+- Update `access_key_id` and `secret_key` in https://github.com/rbmrclo/aws-s3-terraform-fd/blob/master/vars.tf
+- Update bucket name https://github.com/rbmrclo/aws-s3-terraform-fd/blob/master/main.tf#L14
+
 ## Operation logs
 
 **Goal:** To delete an s3 bucket (non-emptied) without errors.
