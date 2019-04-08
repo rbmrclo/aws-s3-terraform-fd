@@ -13,6 +13,7 @@ provider "aws" {
 resource "aws_s3_bucket" "public_website" {
   bucket = "robbie-test-force-destroy"
   acl    = "private"
+  force_destroy = true
   website = {
     index_document = "index.html"
     error_document = "index.html"
